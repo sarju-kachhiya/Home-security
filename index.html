@@ -421,7 +421,184 @@
     line-height: 22px;
 }
 
+/* Section Title */
+.generic-title {
+    font-size: 38px;
+    font-weight: 800;
+    color: #1C1C6B;
+    margin-bottom: 18px;
+}
 
+/* Paragraph text */
+.generic-text {
+    font-size: 18px;
+    line-height: 30px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Highlighted link */
+.generic-text a {
+    color: #4A3AFF;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/* Custom Bullets */
+.generic-list {
+    list-style: none;
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.generic-list li {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 12px;
+    font-size: 17px;
+    color: #1C1C6B;
+}
+
+.generic-list li::before {
+    content: "•";
+    color: #4A3AFF;
+    font-size: 26px;
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+    top: -4px;
+}
+
+.generic-title {
+    font-size: 38px;
+    font-weight: 800;
+    color: #1C1C6B;
+    margin-bottom: 18px;
+}
+
+/* Paragraph text */
+.generic-text {
+    font-size: 18px;
+    line-height: 30px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Highlighted link */
+.generic-link {
+    color: #4A3AFF;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+/* Custom list bullets */
+.generic-list {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.generic-list li {
+    position: relative;
+    padding-left: 16px;
+    margin-bottom: 12px;
+    font-size: 18px;
+    color: #1C1C6B;
+}
+
+.generic-list li::before {
+    content: "•";
+    color: #4A3AFF;
+    font-size: 26px;
+    font-weight: 700;
+    position: absolute;
+    left: 0;
+    top: -4px;
+}
+
+.section-big-title {
+    font-size: 38px;
+    font-weight: 800;
+    color: #1C1C6B;
+    margin-bottom: 20px;
+}
+
+.section-subtitle {
+    font-size: 22px;
+    font-weight: 800;
+    color: #1C1C6B;
+    margin-top: 35px;
+    margin-bottom: 12px;
+}
+
+.section-text {
+    font-size: 18px;
+    line-height: 30px;
+    color: #333;
+    margin-bottom: 18px;
+}
+
+.section-text a {
+    color: #4A3AFF;
+    text-decoration: underline;
+}
+
+.causes-title {
+    font-size: 38px;
+    font-weight: 800;
+    color: #1C1C6B;
+    margin-bottom: 20px;
+}
+
+.causes-text {
+    font-size: 18px;
+    line-height: 30px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.causes-text a {
+    color: #4A3AFF;
+    text-decoration: underline;
+}
+
+.causes-subtitle {
+    font-size: 19px;
+    font-weight: 700;
+    color: #1C1C6B;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+
+/* Bullet list */
+.causes-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.causes-list li {
+    position: relative;
+    padding-left: 22px;
+    font-size: 17px;
+    color: #333;
+    margin-bottom: 14px;
+    line-height: 28px;
+}
+
+.causes-list li::before {
+    content: "•";
+    color: #4A3AFF;
+    font-size: 28px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+
+/* Image styling */
+.causes-image {
+    width: 80%;
+    border-radius: 8px;
+    object-fit: cover;
+}
 
 
 
@@ -648,7 +825,202 @@
 
 
 </section>
+<div class="mt-5">
 
+    <h2 class="generic-title">Section Title Goes Here</h2>
+
+    <p class="generic-text">
+        This is a fully reusable paragraph that can describe any topic or subject.
+        You can replace this text with details that match your page’s content.
+    </p>
+
+    <p class="generic-text">
+        <a href="#">Highlighted link text</a> can be used to reference additional information or resources.
+    </p>
+
+    <!-- Two column list -->
+    <div class="row">
+        <div class="col-md-6">
+            <ul class="generic-list">
+                <li>List item one</li>
+                <li>List item two</li>
+                <li>List item three</li>
+                <li>List item four</li>
+                <li>List item five</li>
+                <li>List item six</li>
+            </ul>
+        </div>
+
+        <div class="col-md-6">
+            <ul class="generic-list">
+                <li>List item seven</li>
+                <li>List item eight</li>
+                <li>List item nine</li>
+                <li>List item ten</li>
+                <li>List item eleven</li>
+                <li>List item twelve</li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<div class="mt-5">
+
+    <h2 class="generic-title">Section Title Goes Here</h2>
+
+    <p class="generic-text">
+        This paragraph describes how certain conditions, materials, or activities may have 
+        affected members of the military across various branches. You can replace this text 
+        with your own topic or legal content.
+    </p>
+
+    <p class="generic-text">
+        Due to widespread use of certain materials and equipment, an estimated 
+        <strong>33%</strong> of affected individuals are veterans.
+    </p>
+
+    <p class="generic-text">
+        <a href="#" class="generic-link">Highlighted link title</a> 
+        may have been impacted while serving in the following branches:
+    </p>
+
+    <ul class="generic-list">
+        <li><a href="#" class="generic-link">U.S. Air Force</a></li>
+        <li><a href="#" class="generic-link">U.S. Army</a></li>
+        <li><a href="#" class="generic-link">U.S. Coast Guard</a></li>
+        <li><a href="#" class="generic-link">U.S. Marine Corps</a></li>
+        <li><a href="#" class="generic-link">U.S. Navy</a></li>
+    </ul>
+
+</div>
+<div class="mt-5">
+
+    <h2 class="section-big-title">Types of Malignant Mesothelioma</h2>
+
+    <p class="section-text">
+        There are four main <a href="#">types of mesothelioma</a> based on where the cancer develops 
+        in the body. Mesothelioma cancer can form in the lining of the lungs, abdomen, heart, 
+        and testes.
+    </p>
+
+    <!-- Pleural Section -->
+    <h3 class="section-subtitle">Pleural Mesothelioma</h3>
+
+    <p class="section-text">
+        Malignant pleural mesothelioma occurs in the <strong>lung lining (pleura)</strong>. 
+        It’s the most common type of mesothelioma, accounting for over 75% of all cases.
+    </p>
+
+    <p class="section-text">
+        When harmful particles or fibers are inhaled, they can get stuck inside the body and lead 
+        to breathing issues. Common symptoms include chest pain, shortness of breath, 
+        and chronic coughing.
+    </p>
+
+    <!-- Peritoneal Section -->
+    <h3 class="section-subtitle">Peritoneal Mesothelioma</h3>
+
+    <p class="section-text">
+        Peritoneal mesothelioma develops in the 
+        <strong>lining of the abdomen (peritoneum)</strong>. It accounts for roughly 10–15% 
+        of all cases of mesothelioma.
+    </p>
+
+    <p class="section-text">
+        This type is caused when harmful materials are swallowed and become trapped in the 
+        digestive tract, eventually leading to tumor growth.
+    </p>
+
+    <p class="section-text">
+        Patients with peritoneal mesothelioma often experience abdominal pain, swelling, 
+        nausea, and changes in bowel habits.
+    </p>
+
+    <h3 class="section-subtitle">Peritoneal Mesothelioma</h3>
+
+    <p class="section-text">
+        Peritoneal mesothelioma develops in the 
+        <strong>lining of the abdomen (peritoneum)</strong>. It accounts for roughly 10–15% 
+        of all cases of mesothelioma.
+    </p>
+
+    <p class="section-text">
+        This type is caused when harmful materials are swallowed and become trapped in the 
+        digestive tract, eventually leading to tumor growth.
+    </p>
+
+    <p class="section-text">
+        Patients with peritoneal mesothelioma often experience abdominal pain, swelling, 
+        nausea, and changes in bowel habits.
+    </p>
+
+    <h3 class="section-subtitle">Peritoneal Mesothelioma</h3>
+
+    <p class="section-text">
+        Peritoneal mesothelioma develops in the 
+        <strong>lining of the abdomen (peritoneum)</strong>. It accounts for roughly 10–15% 
+        of all cases of mesothelioma.
+    </p>
+
+    <p class="section-text">
+        This type is caused when harmful materials are swallowed and become trapped in the 
+        digestive tract, eventually leading to tumor growth.
+    </p>
+
+    <p class="section-text">
+        Patients with peritoneal mesothelioma often experience abdominal pain, swelling, 
+        nausea, and changes in bowel habits.
+    </p>
+
+</div>
+
+<div class="mt-5">
+
+    <h2 class="causes-title">What Causes Mesothelioma?</h2>
+
+    <div class="row align-items-start">
+        
+        <!-- LEFT TEXT -->
+        <div class="col-md-7">
+            <p class="causes-text">
+                The only known <a href="#">cause of mesothelioma</a> cancer is 
+                <strong>asbestos exposure</strong>. When asbestos fibers are disturbed, 
+                they can become airborne. If breathed in or swallowed, they can irritate healthy 
+                cells and cause mesothelioma tumors to form <strong>10 to 50 years later.</strong>
+            </p>
+        </div>
+        <!-- RIGHT IMAGE -->
+        <div class="col-md-5 mt-3 mt-md-0">
+            <img src="assets/side-image.jpg" alt="" class="causes-image">
+        </div>
+
+            <p class="causes-subtitle">
+                Mesothelioma victims may have been exposed to asbestos:
+            </p>
+
+            <ul class="causes-list">
+                <li><strong>On the job</strong> while working with or around asbestos-containing products</li>
+                <li><strong>While serving</strong> in the military</li>
+                <li><strong>Secondhand</strong> by coming into contact with fibers on a loved one’s work clothes</li>
+                <li><strong>At home</strong> from construction materials like insulation, drywall, and plaster</li>
+                <li><strong>Using asbestos-talc</strong> products like <a href="#">baby powder</a> or cosmetics</li>
+            </ul>
+
+            <p class="causes-text">
+                If you’re not sure how you were exposed, our legal partners may be able to help. 
+                They have key resources to determine the products that made you sick and the companies 
+                responsible for your illness.
+            </p>
+        
+
+        <!-- RIGHT IMAGE -->
+        <div class="col-md-5 mt-3 mt-md-0">
+            <img src="assets/your-image.png" alt="" class="causes-image">
+        </div>
+
+    </div>
+
+</div>
 
     <p>More text…</p>
     <p>More text…</p>
