@@ -50,9 +50,9 @@
             background-position: center 50px;
         }
 
-        h1 {
-            font-size: 58px;
-            font-weight: 800;
+        h2 {
+            font-size: 48px;
+            font-weight: 700;
             color: #12185A;
         }
 
@@ -76,6 +76,7 @@
             margin-top: 28px;
         }
         .cta-btn:hover {
+            background: #00741d;
             box-shadow: #005216 0px 10px 20px -10px;
         }
         .cta-btn .txt1:hover{
@@ -302,14 +303,16 @@
 }
 .faq-title {
     font-size: 38px;
-    font-weight: 800;
+    font-weight: 700;
     color: #1C1C6B;
     margin-bottom: 25px;
+    text-align: center;
 }
 
 /* FAQ Container */
 .faq-box {
-    width: 100%;
+    width: 70%;
+    margin: 0 auto 50px;
 }
 
 /* FAQ Item */
@@ -599,6 +602,125 @@
     border-radius: 8px;
     object-fit: cover;
 }
+/* Remove bullets */
+.pros-list li,
+.cons-list li {
+    list-style: none;
+    padding-left: 28px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+/* Pros icon */
+.pros-list li::before {
+    content: "";
+    background: url("assets/pros-icon.png") no-repeat center center / contain;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+/* Cons icon */
+.cons-list li::before {
+    content: "";
+    background: url("assets/cons-icon.png") no-repeat center center / contain;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+.diagnosis-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 15px;
+}
+
+.diagnosis-list li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 1.55;
+}
+
+/* Blue dot bullet like screenshot */
+.diagnosis-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #3f51b5; /* Bluish tone similar to screenshot */
+    font-size: 22px;
+    line-height: 1;
+}
+
+.compare-section {
+    background: #ffffff;
+    padding: 20px 0;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+
+.feature-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 25px;
+    gap: 20px;
+}
+
+.feature-title {
+    font-weight: 700;
+    font-size: 16px;
+    color: #1b202b;
+}
+
+.feature-box {
+    background: #f8f9fc;
+    padding: 15px 18px;
+    border-radius: 8px;
+    border: 1px solid #e6e6e6;
+    font-size: 15px;
+    line-height: 1.45;
+}
+
+.icon-check { color: #28a745; margin-right: 6px; }
+.icon-warn { color: #f1a500; margin-right: 6px; }
+.icon-tool { color: #6c6f75; margin-right: 6px; }
+.icon-money { color: #ff6500; margin-right: 6px; }
+
+/* CTA Button */
+.compare-btn-wrap {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.compare-btn {
+    background: #654ff4;
+    color: #fff;
+    padding: 12px 40px;
+    font-weight: 600;
+    font-size: 17px;
+    border-radius: 8px;
+    display: inline-block;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.compare-btn:hover {
+    background: #3b2f8d;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .feature-row {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 
 
@@ -632,32 +754,31 @@
 
                 <!-- LEFT CONTENT -->
                 <div class="col-lg-7">
-                    <h1>Mesothelioma</h1>
+                    <h2>Home Security Solutions</h2>
 
                     <p class="hero-text">
-                        Mesothelioma is a rare and aggressive cancer caused by exposure to asbestos. By taking legal action,
-                        patients can seek compensation for their treatment costs, everyday living expenses, and more.
-                        See if we can help you pursue compensation for mesothelioma cancer.
+                        Home security today is more than alarms — it’s complete protection built with smart technology, real-time monitoring, and intelligent automation. ADT and Vivint together represent two of the most trusted names in home safety, offering advanced cameras, smart-home controls, and 24/7 monitoring to protect your family, property, and peace of mind.
                     </p>
 
-                    <a href="#" class="cta-btn"><span class="txt1">Get a Free Case Review</span> →</a>
+                    <a href="#" class="cta-btn"><span class="txt1">Get Your Security Recommendation</span> →</a>
                 </div>
 
                 <!-- RIGHT SIDEBAR -->
                 <div class="col-lg-5">
                     <div class="ps-lg-5 mt-5 mt-lg-0">
 
-                        <h3 class="sidebar-title">Why Take Legal Action?</h3>
+                        <h3 class="sidebar-title">Why Choose Smart Home Protection?</h3>
                         <p>
-                            By filing a lawsuit, you can pursue financial compensation and justice from the asbestos
-                            companies that caused you or a loved one harm.
+                            With the right security system, you can enjoy instant alerts, live camera access, automated controls, and continuous professional monitoring. 
                         </p>
 
-                        <h3 class="sidebar-title mt-4">Results Secured</h3>
+                        <h3 class="sidebar-title mt-4">What Homeowners Love</h3>
                         <ul>
-                            <li>$40 million for a U.S. Navy veteran in Washington</li>
-                            <li>$15 million for a New York construction worker</li>
-                            <li>$7 million for a Pennsylvania welder</li>
+                            <li>Smart cameras with mobile alerts and HD video</li>
+                            <li>Smart home controls for lighting, locks, and thermostats</li>
+                            <li>24/7 professional monitoring for peace of mind</li>
+                            <li>Protection designed for comfort, safety, and convenience</li>
+
                         </ul>
 
                         <!-- Divider -->
@@ -665,19 +786,19 @@
 
                         <!-- Author 1 -->
                         <div class="author-block">
-                            <img src="assets/Rae Theodore.png" class="author-photo" alt="Rae Theodore">
+                            <img src="assets/adt-logo-hero.png" class="author-photo" alt="Rae Theodore">
                             <div>
-                                <div class="author-name">Rae Theodore</div>
-                                <div class="author-sub">Last updated: Aug 28, 2025</div>
+                                <div class="author-name">ADT</div>
+                                <div class="author-sub">Helping protect the moments</div>
                             </div>
                         </div>
 
                         <!-- Author 2 -->
                         <div class="author-block">
-                            <img src="assets/Amy Garrett.png" class="author-photo" alt="Amy E. Garrett">
+                            <img src="assets/vivint-logo-hero.png" class="author-photo" alt="Amy E. Garrett">
                             <div>
-                                <div class="author-name">Amy E. Garrett</div>
-                                <div class="author-sub">Fact-Checked and Legally Reviewed</div>
+                                <div class="author-name">Vivint</div>
+                                <div class="author-sub">Smart home alarm system</div>
                             </div>
                         </div>
 
@@ -693,13 +814,110 @@
 
             <!-- LEFT SIDE CONTENT -->
             <div class="col-md-8">
+    <div class="row">
+        <div class="col-md-2">
+    <img src="assets/vivint-logo-hero.png" alt="">
+    </div>
+    <div class="col-md-10">
+    <h2 class="mt-3">Vivint</h2>
+    </div>
+    </div>
+    <h4 class="facts-title mt-4">
+    What is Vivint&nbsp;?</h4>
+    <p>Vivint is a full-scale smart-home and security system provider offering a broad lineup of devices and services: security cameras, sensors (door/window, motion, glass-break), alarms (smoke, CO, water), as well as smart-home devices such as smart locks, lighting, thermostats, garage-door controls, and more.</p>
+    <p>All devices — cameras, sensors, smart-home devices — are integrated under a unified control system (the “Vivint Smart Hub” + mobile app), letting homeowners monitor and manage their entire home environment from one interface.</p>
 
-    <h2>What Is Mesothelioma?</h2>
-    <p>More text…</p>
-    <p>More text…</p>
-    <p>More text…</p>
-    <p>More text…</p>
-    <p>More text…</p>
+    <h4 class="facts-title mt-5">
+    Security and Smart Home Integration&nbsp;:</h4>
+    <ul class="facts-list">
+        <li>Vivint’s security cameras (indoor, outdoor, doorbell) are among their top offerings. The “Outdoor Camera Pro,” for instance, uses weather-resistant hardware, intelligent motion detection, and high-quality video capture to monitor perimeters.</li>
+        <li>Their “Smart Deter” feature is a stand-out — when sensors detect suspicious movement or possible intrusion, the system uses lights, sound, and alerts to deter potential intruders before they attempt a break-in.</li>
+        <li>Beyond security, Vivint supports home automation: you can control lights, climate (thermostat), door locks, garage doors, and other smart-home components from the Vivint app, even remotely (e.g. when away from home).</li>
+        <!-- <li>Veterans account for about <strong>33%</strong> of all mesothelioma cancer cases.</li> -->
+        <li>This combination makes Vivint more than just an alarm system — it’s a unified smart-home ecosystem.</li>
+    </ul>
+    <h4 class="facts-title mt-5">
+    Installation & Monitoring&nbsp;:</h4>
+    <div class="numbered-item">
+        <div class="number-circle">1</div>
+        <div class="number-text mt-2">
+            Vivint emphasizes <strong>professional installation</strong> — a trained technician comes, installs all equipment (cameras, sensors, hub, smart-home devices), and ensures proper integration and configuration.
+        </div>
+    </div>
+    <div class="numbered-item">
+        <div class="number-circle">2</div>
+        <div class="number-text mt-2">
+            Once installed, the system is monitored 24/7. The baseline monitoring plan reportedly starts at <strong>US $19.99/month</strong> (in addition to equipment cost) for basic services — though typical plans are often higher depending on number of devices and cameras.
+        </div>
+    </div>
+    <div class="numbered-item">
+        <div class="number-circle">3</div>
+        <div class="number-text mt-2">
+            Financing options are available: Vivint partners with financing firms to let customers pay for equipment over time.
+        </div>
+    </div>
+    <h4 class="facts-title mt-5">
+    Pros&nbsp;:</h4>
+    <ul class="facts-list pros-list">
+        <li>Advanced smart-home automation + unified control of security, cameras, locks, lights, thermostat, etc.</li>
+        <li>High-quality, AI-enabled cameras + proactive “Smart Deter” threat prevention</li>
+        <li>Professional installation ensures proper setup and integration</li>
+        <li>Unified management: everything controllable via a single hub/app remotely, including smart-home automation</li>
+    </ul>
+    <h4 class="facts-title mt-2">
+    Cons&nbsp;:</h4>
+    <ul class="facts-list cons-list">
+        <li>Premium pricing — equipment is often more expensive than basic systems.</li>
+        <li>Requires long-term contract (often up to 60 months) if financed.</li>
+        <li>Some users may find pricing not transparent, and overall cost can be high especially with multiple cameras/sensors.</li>
+        <li>Not ideal for those who just want a basic alarm system — might be overkill (and over budget) for small homes or simple needs.</li>
+    </ul>
+    <h4 class="facts-title mt-5">
+    Who Is Vivint Best For&nbsp;?</h4>
+    <ul class="facts-list">
+        <li>Want more than just burglary alarms — they want a full smart-home experience (security + automation + convenience)</li>
+        <li>Prefer everything professionally installed, configured, and integrated by experts</li>
+        <li>Are comfortable paying a premium and likely plan to stay long-term (justifying initial cost and contract)</li>
+        <li>Want to control cameras, sensors, locks, lights, thermostat — even remotely (when away) — all from a single app</li>
+    </ul>
+
+    <h4 class="facts-title mt-5">
+    Vivint – Key Features
+</h4>
+
+<ul class="diagnosis-list">
+    <li>
+        <strong>Advanced Smart-Home Automation :</strong> Vivint works as a complete smart-home ecosystem — control lights, locks, thermostats, garage doors, and cameras from one app.
+    </li>
+
+    <li>
+        <strong>AI-Powered Security Cameras :</strong> High-resolution indoor & outdoor cameras with smart motion detection, person alerts, night vision, and “Smart Deter” technology.
+    </li>
+
+    <li>
+        <strong>Fully Integrated System :</strong> Every device — sensors, cameras, door locks, alarms — communicates inside one unified system for smooth automation.
+    </li>
+
+    <li>
+        <strong>24/7 Professional Monitoring :</strong> Round-the-clock monitoring with immediate alerts, emergency dispatch, and instant notifications to your phone.
+    </li>
+
+    <li>
+        <strong>Proactive Threat Prevention :</strong> Vivint’s “Smart Deter” uses lights, sirens, and AI to scare intruders before they attempt a break-in.
+    </li>
+
+    <li>
+        <strong>Smart Hub + Mobile App Control :</strong> Central touchscreen hub + app to manage the entire home from anywhere — lock doors, view cameras, or change temperature.
+    </li>
+
+    <li>
+        <strong>Professional System Setup :</strong> A certified technician installs all devices, configures them, and integrates the full system without user hassle.
+    </li>
+
+    <li>
+        <strong>Smart Notifications & Activity Logs :</strong> Receive real-time alerts for doors opening, motion detected, packages delivered, garage left open, etc.
+    </li>
+</ul>
 
     <!-- ⭐ COMPENSATION CARD INSIDE THE LEFT COLUMN ⭐ -->
     <div class="compensation-card mt-5">
@@ -707,397 +925,27 @@
 
             <!-- LEFT -->
             <div class="col-md-7 p-4">
-                <h4 class="fw-bold text-primary-dark mb-2">Get the Compensation You Deserve</h4>
+                <h4 class="fw-bold text-primary-dark mb-2">Upgrade to Smarter Home Security</h4>
                 <p class="text-secondary mb-4">
-                    Take the first step toward compensation and justice for mesothelioma.
+                    Take the first step toward intelligent monitoring, smart-home automation, and advanced protection for every corner of your home.
                 </p>
                 <a href="#" class="btn btn-success px-4 py-2 fw-bold">
-                    Get a Free Case Review →
+                    Get Your Free Smart Home Review →
                 </a>
             </div>
 
             <!-- RIGHT IMAGE -->
             <div class="col-md-5 p-4">
-                <img src="assets/meso case review.png" class="card-image" alt="">
+                <img src="assets/vivint-cta-card.png" class="card-image" alt="">
             </div>
 
         </div>
     </div>
-    <p>More text…</p>
-    <p>More text…</p>
-    <p>More text…</p>
-    <p>More text…</p>
-    <p>More text…</p>
-    <p>More text…</p>
-    <p>More text…</p>
+    
 
-<h4 class="facts-title">
-    Some <a href="#">facts and figures about malignant mesothelioma</a> include:
-</h4>
 
-<ul class="facts-list">
-    <li>The only known cause of mesothelioma is <strong>exposure to asbestos.</strong></li>
-    <li>About <strong>3,000 patients</strong> are diagnosed with mesothelioma each year in the United States.</li>
-    <li>Common symptoms include a cough and shortness of breath.</li>
-    <li>Veterans account for about <strong>33%</strong> of all mesothelioma cancer cases.</li>
-    <li>Patients and their families may qualify for compensation averaging <strong>over $1 million.</strong></li>
-</ul>
 
-<p class="facts-text">
-    During most of the 20th century, asbestos-containing products could be found at job sites,
-    throughout military bases, and in residential homes. Many companies that made these products
-    knew of the dangers but <strong>intentionally hid the risks</strong> to protect their profits.
-</p>
-
-<p class="facts-text">
-    Some mesothelioma patients have taken legal action to hold these companies accountable and seek
-    <a href="#">compensation</a> for their medical expenses, pain and suffering, and more.
-    <strong>Billions of dollars</strong> have already been paid to victims nationwide.
-</p>
-
-
-    <p>More text…</p>
-
-    <div class="testimonial-box p-4 mt-4">
-    <p class="testimonial-text">
-        “We spent all of our savings and were deeply in debt to pay for my cancer treatment.
-        With the settlement checks, we have enough money now to continue paying for my
-        treatment without worrying.”
-    </p>
-
-    <p class="testimonial-author mt-3">
-        – <a href="#">Dr. Bonnie Snyder</a>, a mesothelioma survivor who worked with our partner firm
-    </p>
-</div>
-
-
-    <p>More text…</p>
-    <p>More text…</p>
-    <p>More text…</p>
-
-    <div class="info-box p-4 mt-4">
-    <p class="info-text">
-        LawFirm.com has <strong>registered nurses on staff</strong> who can help you navigate a 
-        diagnosis and connect with a mesothelioma doctor near you. There’s never any cost to speak 
-        with our team. Get started by 
-        <a href="#">chatting with a case manager</a> now.
-    </p>
-</div>
-
-
-    <p>More text…</p>
-    <p>More text…</p>
-    <p>More text…</p>
-
-    <section class="cell-types-section mt-5">
-
-    <h2 class="cell-title">Types of Mesothelioma Cells</h2>
-
-    <p class="cell-desc">
-        Mesothelioma cancer tumors are made up of different types of cells. The type that you have 
-        can impact the effectiveness of your treatments and how long you may live.
-    </p>
-
-    <p class="cell-subtitle">
-        <strong>The 3 main mesothelioma cell types are:</strong>
-    </p>
-
-    <div class="numbered-item">
-    <div class="number-circle">1</div>
-    <div class="number-text">
-        <strong>Epithelioid:</strong> This is the most common form and the easiest to treat.
-    </div>
-</div>
-
-<div class="numbered-item">
-    <div class="number-circle">2</div>
-    <div class="number-text">
-        <strong>Sarcomatoid:</strong> A rarer but more aggressive cell type, it tends to spread quickly throughout the body.
-    </div>
-</div>
-
-<div class="numbered-item">
-    <div class="number-circle">3</div>
-    <div class="number-text">
-        <strong>Biphasic:</strong> With a combination of both cell types, patients typically respond better to treatment if they have more epithelial cells than sarcomatoid ones.
-    </div>
-</div>
-
-
-</section>
-<div class="mt-5">
-
-    <h2 class="generic-title">Section Title Goes Here</h2>
-
-    <p class="generic-text">
-        This is a fully reusable paragraph that can describe any topic or subject.
-        You can replace this text with details that match your page’s content.
-    </p>
-
-    <p class="generic-text">
-        <a href="#">Highlighted link text</a> can be used to reference additional information or resources.
-    </p>
-
-    <!-- Two column list -->
-    <div class="row">
-        <div class="col-md-6">
-            <ul class="generic-list">
-                <li>List item one</li>
-                <li>List item two</li>
-                <li>List item three</li>
-                <li>List item four</li>
-                <li>List item five</li>
-                <li>List item six</li>
-            </ul>
-        </div>
-
-        <div class="col-md-6">
-            <ul class="generic-list">
-                <li>List item seven</li>
-                <li>List item eight</li>
-                <li>List item nine</li>
-                <li>List item ten</li>
-                <li>List item eleven</li>
-                <li>List item twelve</li>
-            </ul>
-        </div>
-    </div>
-
-</div>
-<div class="mt-5">
-
-    <h2 class="generic-title">Section Title Goes Here</h2>
-
-    <p class="generic-text">
-        This paragraph describes how certain conditions, materials, or activities may have 
-        affected members of the military across various branches. You can replace this text 
-        with your own topic or legal content.
-    </p>
-
-    <p class="generic-text">
-        Due to widespread use of certain materials and equipment, an estimated 
-        <strong>33%</strong> of affected individuals are veterans.
-    </p>
-
-    <p class="generic-text">
-        <a href="#" class="generic-link">Highlighted link title</a> 
-        may have been impacted while serving in the following branches:
-    </p>
-
-    <ul class="generic-list">
-        <li><a href="#" class="generic-link">U.S. Air Force</a></li>
-        <li><a href="#" class="generic-link">U.S. Army</a></li>
-        <li><a href="#" class="generic-link">U.S. Coast Guard</a></li>
-        <li><a href="#" class="generic-link">U.S. Marine Corps</a></li>
-        <li><a href="#" class="generic-link">U.S. Navy</a></li>
-    </ul>
-
-</div>
-<div class="mt-5">
-
-    <h2 class="section-big-title">Types of Malignant Mesothelioma</h2>
-
-    <p class="section-text">
-        There are four main <a href="#">types of mesothelioma</a> based on where the cancer develops 
-        in the body. Mesothelioma cancer can form in the lining of the lungs, abdomen, heart, 
-        and testes.
-    </p>
-
-    <!-- Pleural Section -->
-    <h3 class="section-subtitle">Pleural Mesothelioma</h3>
-
-    <p class="section-text">
-        Malignant pleural mesothelioma occurs in the <strong>lung lining (pleura)</strong>. 
-        It’s the most common type of mesothelioma, accounting for over 75% of all cases.
-    </p>
-
-    <p class="section-text">
-        When harmful particles or fibers are inhaled, they can get stuck inside the body and lead 
-        to breathing issues. Common symptoms include chest pain, shortness of breath, 
-        and chronic coughing.
-    </p>
-
-    <!-- Peritoneal Section -->
-    <h3 class="section-subtitle">Peritoneal Mesothelioma</h3>
-
-    <p class="section-text">
-        Peritoneal mesothelioma develops in the 
-        <strong>lining of the abdomen (peritoneum)</strong>. It accounts for roughly 10–15% 
-        of all cases of mesothelioma.
-    </p>
-
-    <p class="section-text">
-        This type is caused when harmful materials are swallowed and become trapped in the 
-        digestive tract, eventually leading to tumor growth.
-    </p>
-
-    <p class="section-text">
-        Patients with peritoneal mesothelioma often experience abdominal pain, swelling, 
-        nausea, and changes in bowel habits.
-    </p>
-
-    <h3 class="section-subtitle">Peritoneal Mesothelioma</h3>
-
-    <p class="section-text">
-        Peritoneal mesothelioma develops in the 
-        <strong>lining of the abdomen (peritoneum)</strong>. It accounts for roughly 10–15% 
-        of all cases of mesothelioma.
-    </p>
-
-    <p class="section-text">
-        This type is caused when harmful materials are swallowed and become trapped in the 
-        digestive tract, eventually leading to tumor growth.
-    </p>
-
-    <p class="section-text">
-        Patients with peritoneal mesothelioma often experience abdominal pain, swelling, 
-        nausea, and changes in bowel habits.
-    </p>
-
-    <h3 class="section-subtitle">Peritoneal Mesothelioma</h3>
-
-    <p class="section-text">
-        Peritoneal mesothelioma develops in the 
-        <strong>lining of the abdomen (peritoneum)</strong>. It accounts for roughly 10–15% 
-        of all cases of mesothelioma.
-    </p>
-
-    <p class="section-text">
-        This type is caused when harmful materials are swallowed and become trapped in the 
-        digestive tract, eventually leading to tumor growth.
-    </p>
-
-    <p class="section-text">
-        Patients with peritoneal mesothelioma often experience abdominal pain, swelling, 
-        nausea, and changes in bowel habits.
-    </p>
-
-</div>
-
-<div class="mt-5">
-
-    <h2 class="causes-title">What Causes Mesothelioma?</h2>
-
-    <div class="row align-items-start">
-        
-        <!-- LEFT TEXT -->
-        <div class="col-md-7">
-            <p class="causes-text">
-                The only known <a href="#">cause of mesothelioma</a> cancer is 
-                <strong>asbestos exposure</strong>. When asbestos fibers are disturbed, 
-                they can become airborne. If breathed in or swallowed, they can irritate healthy 
-                cells and cause mesothelioma tumors to form <strong>10 to 50 years later.</strong>
-            </p>
-        </div>
-        <!-- RIGHT IMAGE -->
-        <div class="col-md-5 mt-3 mt-md-0">
-            <img src="assets/side-image.jpg" alt="" class="causes-image">
-        </div>
-
-            <p class="causes-subtitle">
-                Mesothelioma victims may have been exposed to asbestos:
-            </p>
-
-            <ul class="causes-list">
-                <li><strong>On the job</strong> while working with or around asbestos-containing products</li>
-                <li><strong>While serving</strong> in the military</li>
-                <li><strong>Secondhand</strong> by coming into contact with fibers on a loved one’s work clothes</li>
-                <li><strong>At home</strong> from construction materials like insulation, drywall, and plaster</li>
-                <li><strong>Using asbestos-talc</strong> products like <a href="#">baby powder</a> or cosmetics</li>
-            </ul>
-
-            <p class="causes-text">
-                If you’re not sure how you were exposed, our legal partners may be able to help. 
-                They have key resources to determine the products that made you sick and the companies 
-                responsible for your illness.
-            </p>
-        
-
-        <!-- RIGHT IMAGE -->
-        <div class="col-md-5 mt-3 mt-md-0">
-            <img src="assets/your-image.png" alt="" class="causes-image">
-        </div>
-
-    </div>
-
-</div>
-
-    <p>More text…</p>
-    <p>More text…</p>
-    <p>More text…</p>
-    <p>More text…</p>
-    <p>More text…</p>
-    <p>More text…</p>
-
-    <section class="faq-section mt-5">
-
-    <h2 class="faq-title">Mesothelioma FAQs</h2>
-
-    <div class="faq-box">
-
-        <!-- FAQ 1 - OPEN by default -->
-        <div class="faq-item active">
-            <button class="faq-question">
-                What is mesothelioma cancer?
-                <span class="faq-icon">
-    <img src="assets/icon.png" class="faq-arrow" alt="">
-</span>
-            </button>
-            <div class="faq-answer">
-                <p>
-                    Mesothelioma is a <strong>rare and aggressive cancer</strong> that forms in the
-                    mesothelium, the thin tissue lining the lungs, abdomen, heart, or testicles. 
-                    There are four types of mesothelioma based on where the cancer develops.
-                </p>
-                <p>
-                    Mesothelioma cancer is caused by <strong>exposure to asbestos</strong>, which 
-                    can cause changes in a cell’s DNA and lead to tumor growth.
-                </p>
-            </div>
-        </div>
-
-        <!-- FAQ 2 -->
-        <div class="faq-item">
-            <button class="faq-question">
-                What is the survival rate for mesothelioma?
-                <span class="faq-icon">
-    <img src="assets/icon.png" class="faq-arrow" alt="">
-</span>
-            </button>
-            <div class="faq-answer">
-                <p>Answer content goes here…</p>
-            </div>
-        </div>
-
-        <!-- FAQ 3 -->
-        <div class="faq-item">
-            <button class="faq-question">
-                What does early mesothelioma feel like?
-                <span class="faq-icon">
-    <img src="assets/icon.png" class="faq-arrow" alt="">
-</span>
-            </button>
-            <div class="faq-answer">
-                <p>Answer content goes here…</p>
-            </div>
-        </div>
-
-        <!-- FAQ 4 -->
-        <div class="faq-item">
-            <button class="faq-question">
-                Has anyone ever recovered from mesothelioma?
-                <span class="faq-icon">
-    <img src="assets/icon.png" class="faq-arrow" alt="">
-</span>
-            </button>
-            <div class="faq-answer">
-                <p>Answer content goes here…</p>
-            </div>
-        </div>
-
-    </div>
-
-</section>
+    
 
 
 </div>
@@ -1135,14 +983,14 @@
             <div class="col-md-3">
     <div class="sticky-top" style="top: 100px;">
         <div class="custom-card p-4">
-            <img src="assets/meso case review.png" class="card-img-top" alt="">
+            <img src="assets/vivint-side-card.png" class="card-img-top" alt="">
             <div class="card-body">
-                <h5 class="card-title fw-bold mt-3">Get Legal Help Now</h5>
+                <h5 class="card-title fw-bold mt-3">Upgrade Home Security</h5>
                 <p class="card-text">
-                    See if a top mesothelioma lawyer can pursue compensation on your behalf.
+                    Take the first step toward home secuirity for every corner of your home.
                 </p>
                 <a href="#" class="btn btn-success w-100">
-                    Get a Free Case Review →
+                    Get Smart Home Review →
                 </a>
             </div>
         </div>
@@ -1152,6 +1000,372 @@
 
         </div>
     </div>
+</section>
+
+<section class="py-5">
+    <div class="container">
+        <div class="row">
+
+            <!-- LEFT SIDE CONTENT -->
+            <div class="col-md-8">
+    <div class="row">
+        <div class="col-md-2">
+    <img src="assets/adt-logo-hero.png" alt="">
+    </div>
+    <div class="col-md-10">
+    <h2 class="mt-3">ADT</h2>
+    </div>
+    </div>
+    <h4 class="facts-title mt-4">
+    What is ADT&nbsp;?
+</h4>
+<p>ADT is a long-established home security company offering alarm systems, sensors, monitoring, and — depending on the customer’s choice — smart-home integrations. Compared to Vivint, ADT tends to emphasize reliable, flexible security systems, often with affordability and customization as core benefits.</p>
+<p>ADT’s solutions are built around dependable alarm systems, optional smart-home tools, and highly trusted monitoring services designed to protect homes across different budgets and needs.</p>
+
+<h4 class="facts-title mt-5">
+    Security, Monitoring & Flexibility&nbsp;:
+</h4>
+<ul class="facts-list">
+    <li>ADT is often praised for its monitoring infrastructure: multiple monitoring centers, reliable alarm response, and a variety of plan options to suit different budgets and needs.</li>
+    <li>The system tends to be flexible: you can choose basic alarm + sensor packages, or extend your setup with additional devices depending on your requirements.</li>
+    <li>Installation can be more customizable — ADT offers professional installation, but many plans and packages allow more freedom in selection, making it easier to tailor for different home sizes and needs.</li>
+    <li>Its flexibility makes it ideal for users who want dependable home security without committing to expensive, fully automated smart-home ecosystems.</li>
+    <li>Overall, ADT focuses on reliable, accessible home protection rather than premium AI-driven automation.</li>
+</ul>
+
+<h4 class="facts-title mt-5">
+    Pricing & Affordability&nbsp;:
+</h4>
+<div class="numbered-item">
+    <div class="number-circle">1</div>
+    <div class="number-text mt-2">
+        ADT is frequently cited as a more budget-friendly and predictable security option — especially for users who only need basic alarms and sensors without high-end automation.
+    </div>
+</div>
+<div class="numbered-item">
+    <div class="number-circle">2</div>
+    <div class="number-text mt-2">
+        Lower upfront installation fees and flexible packages make ADT attractive for homeowners who want cost-effective security solutions.
+    </div>
+</div>
+<div class="numbered-item">
+    <div class="number-circle">3</div>
+    <div class="number-text mt-2">
+        ADT’s long-standing monitoring service offers solid value for homeowners who want dependable 24/7 protection at a reasonable monthly cost.
+    </div>
+</div>
+
+<h4 class="facts-title mt-5">
+    Pros&nbsp;:
+</h4>
+<ul class="facts-list pros-list">
+    <li>Generally more affordable compared to premium smart-home-first systems.</li>
+    <li>Flexible packages — from basic alarm systems to more comprehensive setups.</li>
+    <li>Well-established monitoring infrastructure backed by decades of experience.</li>
+    <li>Ideal for users seeking cost-effective, no-frills security with predictable pricing.</li>
+</ul>
+
+<h4 class="facts-title mt-2">
+    Cons&nbsp;:
+</h4>
+<ul class="facts-list cons-list">
+    <li>Less advanced in smart-home automation compared to high-end providers like Vivint.</li>
+    <li>Advanced smart-home features may require third-party add-ons, which may not integrate seamlessly.</li>
+    <li>Doesn’t offer the “everything in one app” smart-home + security experience found in some modern systems.</li>
+    <li>Not ideal for tech-heavy users who want full automation, AI-enabled cameras, or a unified smart-home ecosystem.</li>
+</ul>
+
+<h4 class="facts-title mt-5">
+    Who Is ADT Best For&nbsp;?
+</h4>
+<ul class="facts-list">
+    <li>Homeowners focused on reliable, affordable security rather than advanced smart-home automation.</li>
+    <li>Those who want flexible basic alarm and sensor packages without paying for premium extras.</li>
+    <li>Users who prefer a trusted, time-tested monitoring infrastructure with predictable pricing.</li>
+    <li>People with smaller homes or limited budgets who value solid essential security over full smart-home features.</li>
+</ul>
+
+<h4 class="facts-title mt-5">
+    ADT – Key Features
+</h4>
+
+<ul class="diagnosis-list">
+    <li>
+        <strong>Reliable 24/7 Alarm Monitoring :</strong> ADT is known for long-time trusted monitoring centers providing quick emergency response.
+    </li>
+
+    <li>
+        <strong>Traditional + Smart Security Options :</strong> Choose between basic alarm systems or upgraded smart packages including cameras, smart locks, and sensors.
+    </li>
+
+    <li>
+        <strong>Flexible Equipment Packages :</strong> Customize your system with door/window sensors, motion detectors, doorbell cameras, flood sensors, and more.
+    </li>
+
+    <li>
+        <strong>Lower Upfront Cost Options :</strong> Generally more affordable than high-end smart-home systems, making it easier for homeowners on a budget.
+    </li>
+
+    <li>
+        <strong>Professional Installation Available :</strong> Technicians can install your full system or help configure your chosen package.
+    </li>
+
+    <li>
+        <strong>Works With Smart Home Devices :</strong> Supports integration with Google Home, Alexa, and certain third-party smart-home devices.
+    </li>
+
+    <li>
+        <strong>Mobile App Alerts & Controls :</strong> Manage alarms, get security alerts, arm/disarm your system remotely, and check home status from the ADT app.
+    </li>
+
+    <li>
+        <strong>Strong Legacy & Trust Factor :</strong> Over 145+ years in the security industry with millions of homes monitored — highest brand trust in home security.
+    </li>
+</ul>
+
+
+    <!-- ⭐ COMPENSATION CARD INSIDE THE LEFT COLUMN ⭐ -->
+    <div class="compensation-card mt-5">
+        <div class="row g-0 align-items-center">
+
+            <!-- LEFT -->
+            <div class="col-md-7 p-4">
+                <h4 class="fw-bold text-primary-dark mb-2">Get the Home Protection You Deserve</h4>
+                <p class="text-secondary mb-4">
+                    Take the first step toward stronger home security, real-time monitoring, and trusted protection backed by decades of experience.
+                </p>
+                <a href="#" class="btn btn-success px-4 py-2 fw-bold">
+                    Get Your Free Security Review →
+                </a>
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="col-md-5 p-4">
+                <img src="assets/adt-cta-card.png" class="card-image" alt="">
+            </div>
+
+        </div>
+    </div>
+    
+
+
+
+    
+
+
+</div>
+
+            <!-- <div class="col-md-8">
+    <div class="compensation-card">
+        <div class="row g-0 align-items-center">
+
+            
+            <div class="col-md-7 p-4">
+                <h4 class="fw-bold text-primary-dark mb-2">Get the Compensation You Deserve</h4>
+                <p class="text-secondary mb-4">
+                    Take the first step toward compensation and justice for mesothelioma.
+                </p>
+                <a href="#" class="btn btn-success px-4 py-2 fw-bold">
+                    Get a Free Case Review →
+                </a>
+            </div>
+
+            
+            <div class="col-md-5 text-end">
+                <img src="assets/meso case review.png" class="card-image" alt="">
+            </div>
+
+        </div>
+    </div>
+</div> -->
+<div class="col-md-1">
+
+</div>
+
+
+
+            <!-- RIGHT SIDE CARD (STICKY) -->
+            <div class="col-md-3">
+    <div class="sticky-top" style="top: 100px;">
+        <div class="custom-card p-4">
+            <img src="assets/adt-side-card.png" class="card-img-top" alt="">
+            <div class="card-body">
+                <h5 class="card-title fw-bold mt-3">Get Home Protection</h5>
+                <p class="card-text">
+                    Take the first step toward stronger home security by decades of experience.
+                </p>
+                <a href="#" class="btn btn-success w-100">
+                    Get Security Review →
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+    </div>
+</section>
+<div class="container">
+<section class="compare-section mt-5">
+    <h3 class="facts-title mb-4">Vivint vs ADT — Key Feature Comparison</h3>
+
+    <div class="feature-row">
+        <div class="feature-title">Smart-home Integration</div>
+        <div class="feature-box">
+            <span class="icon-check">✅</span>
+            Strong — unified smart-home + security ecosystem with automation and remote control via app/hub
+        </div>
+        <div class="feature-box">
+            <span class="icon-warn">⚠️</span>
+            More limited — mainly focused on core security; advanced automation often needs add-ons or third-party gear
+        </div>
+    </div>
+
+    <div class="feature-row">
+        <div class="feature-title">Security Cameras & Sensor Quality</div>
+        <div class="feature-box">
+            <span class="icon-check">✅</span>
+            High-end — AI-enabled cameras, Smart Deter, advanced motion detection, premium sensors
+        </div>
+        <div class="feature-box">
+            <span class="icon-check">✅</span>
+            Good — reliable monitoring & sensors, but not as modern or AI-driven as premium systems
+        </div>
+    </div>
+
+    <div class="feature-row">
+        <div class="feature-title">Installation Approach</div>
+        <div class="feature-box">
+            <span class="icon-tool">🛠️</span>
+            Professional installation only — ensures proper setup & configuration by experts
+        </div>
+        <div class="feature-box">
+            <span class="icon-check">✅</span>
+            More flexible — professional or simpler setup based on package
+        </div>
+    </div>
+
+    <div class="feature-row">
+        <div class="feature-title">Pricing / Affordability</div>
+        <div class="feature-box">
+            <span class="icon-money">💰</span>
+            Premium — higher equipment cost + long-term contracts; great value for automation-heavy needs
+        </div>
+        <div class="feature-box">
+            <span class="icon-check">✅</span>
+            Budget-friendly — lower upfront cost, flexible plans & ideal for essential home security
+        </div>
+    </div>
+
+    <div class="feature-row">
+        <div class="feature-title">Best For</div>
+        <div class="feature-box">
+            Smart-home enthusiasts, large homes, automation lovers wanting all-in-one control
+        </div>
+        <div class="feature-box">
+            Homeowners wanting simple, reliable, cost-effective security without automation extras
+        </div>
+    </div>
+
+    <div class="compare-btn-wrap">
+        <a href="#" class="compare-btn">Compare Plans</a>
+    </div>
+</section>
+</div>
+
+
+
+<section class="faq-section mt-5">
+
+    <h2 class="faq-title">FAQs</h2>
+
+    <div class="faq-box">
+       <div class="faq-item active">
+    <button class="faq-question">
+        What is the main difference between ADT and Vivint?
+        <span class="faq-icon">
+            <img src="assets/icon.png" class="faq-arrow" alt="">
+        </span>
+    </button>
+    <div class="faq-answer">
+        <p>Vivint focuses on advanced smart-home automation with AI-powered cameras and unified controls, while ADT prioritizes reliable, affordable home security with flexible monitoring and equipment options.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <button class="faq-question">
+        Which system is better for complete smart-home automation?
+        <span class="faq-icon">
+            <img src="assets/icon.png" class="faq-arrow" alt="">
+        </span>
+    </button>
+    <div class="faq-answer">
+        <p>Vivint is better for automation—offering integrated control of locks, lights, thermostats, garage doors, and cameras through one unified app and smart hub.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <button class="faq-question">
+        Which option is more budget-friendly for homeowners?
+        <span class="faq-icon">
+            <img src="assets/icon.png" class="faq-arrow" alt="">
+        </span>
+    </button>
+    <div class="faq-answer">
+        <p>ADT is generally more affordable, offering lower upfront costs and flexible packages ideal for essential home security without premium automation features.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <button class="faq-question">
+        Do both ADT and Vivint provide 24/7 professional monitoring?
+        <span class="faq-icon">
+            <img src="assets/icon.png" class="faq-arrow" alt="">
+        </span>
+    </button>
+    <div class="faq-answer">
+        <p>Yes. Both Vivint and ADT offer round-the-clock monitoring with emergency alerts, rapid response, and real-time notifications for security risks.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <button class="faq-question">
+        Which company offers better security cameras and detection features?
+        <span class="faq-icon">
+            <img src="assets/icon.png" class="faq-arrow" alt="">
+        </span>
+    </button>
+    <div class="faq-answer">
+        <p>Vivint offers more advanced cameras with AI detection, Smart Deter technology, and superior motion analytics, making it ideal for high-tech home surveillance.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <button class="faq-question">
+        Is professional installation required for both systems?
+        <span class="faq-icon">
+            <img src="assets/icon.png" class="faq-arrow" alt="">
+        </span>
+    </button>
+    <div class="faq-answer">
+        <p>Vivint requires professional installation for all systems, while ADT provides both professional and simpler installation options depending on the chosen package.</p>
+    </div>
+</div>
+
+<div class="faq-item">
+    <button class="faq-question">
+        Which system is better for small homes or basic security needs?
+        <span class="faq-icon">
+            <img src="assets/icon.png" class="faq-arrow" alt="">
+        </span>
+    </button>
+    <div class="faq-answer">
+        <p>ADT is ideal for small homes or basic security needs because it offers essential alarms, sensors, and monitoring at a lower cost without requiring advanced automation.</p>
+    </div>
+</div>
+
+
 </section>
 
 <footer class="footer-section mt-5">
@@ -1203,11 +1417,11 @@
             <!-- RIGHT NAVIGATION COLUMN 3 -->
             <div class="col-md-4 mt-4 mt-md-0 text-center">
                 <ul class="footer-links mt-4">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Expert Contributors</a></li>
+                    <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <!-- <li><a href="#">Expert Contributors</a></li>
                     <li><a href="#">Free Case Review</a></li>
-                    <li><a href="#">Editorial Guidelines</a></li>
+                    <li><a href="#">Editorial Guidelines</a></li> -->
                 </ul>
             </div>
 

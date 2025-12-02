@@ -123,6 +123,54 @@
             color: #C9C9FF;
             text-align: center;
         }
+        .footer-section {
+    background: #1B1C54; /* deep blue */
+    color: #ffffff;
+}
+
+.footer-logo-img {
+    width: 220px;
+}
+
+.footer-heading {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.footer-text {
+    font-size: 15px;
+    line-height: 26px;
+    opacity: 0.9;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    opacity: 0.85;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    background: #15163F;
+    font-size: 13px;
+    line-height: 22px;
+}
     </style>
 </head>
 
@@ -156,43 +204,75 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer">
-        <div class="container">
+    <footer class="footer-section mt-5">
+    <div class="container py-5">
 
-            <div class="row">
-
-                <div class="col-md-4 mb-4">
-                    <img src="assets/logo.png" class="footer-logo mb-3" alt="">
-                    <h4 class="footer-title">What Drives Us</h4>
-                    <p>
-                        We are committed to providing accurate and actionable content to individuals navigating
-                        the legal system. Our mission is to make legal information easier to understand and more accessible.
-                    </p>
-                </div>
-
-                <div class="col-md-2 mb-4">
-                    <h4 class="footer-title">Navigation</h4>
-                    <a href="#">Mesothelioma</a>
-                    <a href="#">Birth Injury</a>
-                    <a href="#">Nursing Home Abuse</a>
-                    <a href="#">Product Liability</a>
-                    <a href="#">Dangerous Drugs</a>
-                </div>
-
-                <div class="col-md-2 mb-4">
-                    <h4 class="footer-title">Legal Info</h4>
-                    <a href="#">About Us</a>
-                    <a href="#">Contact Us</a>
-                    <a href="#">Expert Contributors</a>
-                    <a href="#">Editorial Guidelines</a>
-                </div>
-            </div>
-
-            <div class="footer-bottom mt-4">
-                © 2025 YourWebsite.com — All rights reserved.
-            </div>
+        <!-- LOGO -->
+        <div class="footer-logo mb-4">
+            <img src="assets/logo.png" alt="Logo" class="footer-logo-img">
         </div>
-    </footer>
+
+        <div class="row">
+
+            <!-- LEFT SECTION: What Drives Us -->
+            <div class="col-md-4">
+                <h5 class="footer-heading">What Drives Us</h5>
+                <p class="footer-text">
+                    LawFirm.com is committed to providing accurate and actionable content 
+                    to individuals injured through no fault of their own. We understand the 
+                    challenges people face in navigating the legal system, and our mission is 
+                    to provide comprehensive support.
+                </p>
+            </div>
+
+            <!-- MIDDLE NAVIGATION COLUMN 1 -->
+            <div class="col-md-4 mt-4 mt-md-0 text-center">
+                <h5 class="footer-heading">Navigation</h5>
+
+                <ul class="footer-links">
+                    <li><a href="#">Mesothelioma</a></li>
+                    <li><a href="#">Birth Injury</a></li>
+                    <li><a href="#">Nursing Home Abuse</a></li>
+                    <li><a href="#">Product Liability</a></li>
+                    <li><a href="#">Dangerous Drugs</a></li>
+                </ul>
+            </div>
+
+            <!-- MIDDLE NAVIGATION COLUMN 2 -->
+            <!-- <div class="col-md-4 mt-4 mt-md-0">
+
+                <ul class="footer-links mt-4">
+                    <li><a href="#">Personal Injury</a></li>
+                    <li><a href="#">Medical Malpractice</a></li>
+                    <li><a href="#">Disability Insurance</a></li>
+                    <li><a href="#">Bankruptcy</a></li>
+                    <li><a href="#">Criminal Defense</a></li>
+                </ul>
+            </div> -->
+
+            <!-- RIGHT NAVIGATION COLUMN 3 -->
+            <div class="col-md-4 mt-4 mt-md-0 text-center">
+                <ul class="footer-links mt-4">
+                    <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                    <!-- <li><a href="#">Expert Contributors</a></li>
+                    <li><a href="#">Free Case Review</a></li>
+                    <li><a href="#">Editorial Guidelines</a></li> -->
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- COPYRIGHT BAR -->
+    <div class="footer-bottom">
+        <div class="container text-center text-white py-3">
+            © 2025 LawFirm.com — The information provided is not a substitute for legal or 
+            professional medical advice. For more information, see our privacy policy, 
+            terms of use, and disclaimer.
+        </div>
+    </div>
+</footer>
 
 </body>
 </html>
