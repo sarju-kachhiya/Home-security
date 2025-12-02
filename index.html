@@ -673,6 +673,7 @@
 }
 
 .feature-title {
+    text-align: center;
     font-weight: 700;
     font-size: 16px;
     color: #1b202b;
@@ -720,6 +721,22 @@
         grid-template-columns: 1fr;
     }
 }
+.header-row .feature-box {
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    padding: 12px 0;
+    background: #f7f7f7;
+    border-radius: 6px;
+}
+
+.vivint-tag {
+    color: #ff7a00; /* Vivint orange */
+}
+
+.adt-tag {
+    color: #0057b8; /* ADT blue */
+}
 
 
 
@@ -741,7 +758,7 @@
             </a>
 
             <!-- BUTTON RIGHT -->
-            <a href="#" class="header-btn">
+            <a href="https://www.vivint.com/" class="header-btn">
                 Call Now
             </a>
 
@@ -760,7 +777,7 @@
                         Home security today is more than alarms — it’s complete protection built with smart technology, real-time monitoring, and intelligent automation. ADT and Vivint together represent two of the most trusted names in home safety, offering advanced cameras, smart-home controls, and 24/7 monitoring to protect your family, property, and peace of mind.
                     </p>
 
-                    <a href="#" class="cta-btn"><span class="txt1">Get Your Security Recommendation</span> →</a>
+                    <a href="https://www.adt.com/" class="cta-btn"><span class="txt1">Get Your Security Recommendation</span> →</a>
                 </div>
 
                 <!-- RIGHT SIDEBAR -->
@@ -929,7 +946,7 @@
                 <p class="text-secondary mb-4">
                     Take the first step toward intelligent monitoring, smart-home automation, and advanced protection for every corner of your home.
                 </p>
-                <a href="#" class="btn btn-success px-4 py-2 fw-bold">
+                <a href="https://www.vivint.com/" class="btn btn-success px-4 py-2 fw-bold">
                     Get Your Free Smart Home Review →
                 </a>
             </div>
@@ -989,7 +1006,7 @@
                 <p class="card-text">
                     Take the first step toward home secuirity for every corner of your home.
                 </p>
-                <a href="#" class="btn btn-success w-100">
+                <a href="https://www.vivint.com/" class="btn btn-success w-100">
                     Get Smart Home Review →
                 </a>
             </div>
@@ -1134,7 +1151,7 @@
                 <p class="text-secondary mb-4">
                     Take the first step toward stronger home security, real-time monitoring, and trusted protection backed by decades of experience.
                 </p>
-                <a href="#" class="btn btn-success px-4 py-2 fw-bold">
+                <a href="https://www.adt.com/" class="btn btn-success px-4 py-2 fw-bold">
                     Get Your Free Security Review →
                 </a>
             </div>
@@ -1194,7 +1211,7 @@
                 <p class="card-text">
                     Take the first step toward stronger home security by decades of experience.
                 </p>
-                <a href="#" class="btn btn-success w-100">
+                <a href="https://www.adt.com/" class="btn btn-success w-100">
                     Get Security Review →
                 </a>
             </div>
@@ -1209,6 +1226,13 @@
 <div class="container">
 <section class="compare-section mt-5">
     <h3 class="facts-title mb-4">Vivint vs ADT — Key Feature Comparison</h3>
+
+    <!-- Column Labels -->
+    <div class="feature-row header-row">
+        <div class="feature-title"></div>
+        <div class="feature-box company-tag vivint-tag"><strong>Vivint</strong></div>
+        <div class="feature-box company-tag adt-tag"><strong>ADT</strong></div>
+    </div>
 
     <div class="feature-row">
         <div class="feature-title">Smart-home Integration</div>
@@ -1269,10 +1293,12 @@
     </div>
 
     <div class="compare-btn-wrap">
-        <a href="#" class="compare-btn">Compare Plans</a>
+        <a href="https://www.vivint.com/" class="compare-btn">Compare Plans</a>
     </div>
+
 </section>
 </div>
+
 
 
 
@@ -1445,11 +1471,17 @@ document.querySelectorAll('.faq-question').forEach(btn => {
     btn.addEventListener('click', () => {
         const item = btn.parentElement;
 
-        // Toggle FAQ open/close
+        // Close all FAQs
+        document.querySelectorAll('.faq-item').forEach(faq => {
+            if (faq !== item) faq.classList.remove('active');
+        });
+
+        // Toggle clicked FAQ
         item.classList.toggle('active');
     });
 });
 </script>
+
 
 
 </body>
