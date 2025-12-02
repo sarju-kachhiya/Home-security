@@ -24,7 +24,7 @@
         }
 
         .logo {
-            width: 140px;
+            width: 240px;
         }
 
         .header-btn {
@@ -92,10 +92,7 @@
             margin-top: 80px;
         }
 
-        .footer-logo {
-            width: 160px;
-            filter: brightness(0) invert(1);
-        }
+        
 
         .footer-title {
             font-size: 18px;
@@ -126,6 +123,10 @@
         .footer-section {
     background: #1B1C54; /* deep blue */
     color: #ffffff;
+}
+
+.footer-logo {
+    text-align: center;
 }
 
 .footer-logo-img {
@@ -171,18 +172,26 @@
     font-size: 13px;
     line-height: 22px;
 }
+
     </style>
 </head>
 
 <body>
 
     <!-- HEADER -->
-    <header class="main-header">
+    <header class="main-header fixed-top">
         <div class="container d-flex justify-content-between align-items-center">
-            <a href="#">
-                <img src="assets/logo.png" alt="Logo" class="logo">
+
+            <!-- LOGO LEFT -->
+            <a href="./">
+                <img src="assets/Automatehom_Dark Blue_logo.png" alt="Logo" class="logo">
             </a>
-            <a href="#" class="header-btn">Call Now</a>
+
+            <!-- BUTTON RIGHT -->
+            <a href="https://www.vivint.com/" target="_blank" class="header-btn">
+                Call Now
+            </a>
+
         </div>
     </header>
 
@@ -209,24 +218,27 @@
 
         <!-- LOGO -->
         <div class="footer-logo mb-4">
-            <img src="assets/logo.png" alt="Logo" class="footer-logo-img">
+            <a href="./"><img src="assets/Automatehom_White.png" alt="Logo" class="footer-logo-img"></a>
         </div>
 
         <div class="row">
 
             <!-- LEFT SECTION: What Drives Us -->
-            <div class="col-md-4">
+            <div class="col-md-12 text-center">
                 <h5 class="footer-heading">What Drives Us</h5>
                 <p class="footer-text">
-                    LawFirm.com is committed to providing accurate and actionable content 
-                    to individuals injured through no fault of their own. We understand the 
-                    challenges people face in navigating the legal system, and our mission is 
-                    to provide comprehensive support.
+                    At AutomateHom, we are committed to giving homeowners clear, reliable, and easy-to-understand guidance in a world filled with complex security choices. Whether you’re comparing monitoring plans, exploring smart-home systems, or learning how modern safety features work, our goal is to simplify the process. We focus on delivering insights that help you protect your home with confidence and choose the solutions that genuinely match your needs.
                 </p>
+                <p class="footer-text">
+                    We believe that every home deserves strong, dependable protection and knowledge is the first step. That’s why AutomateHom brings together expert reviews, real system comparisons, and practical home-security tips, all designed to help you stay informed. From smart automation to professional monitoring services, we break down the essential details so you can make decisions rooted in clarity, not confusion.  Our mission at AutomateHom is to empower you with information that truly matters. As home-security technology continues to evolve, we work to keep you up to date with the most trusted solutions, the latest innovations, and the features that offer real value. Whether you’re upgrading your current setup or exploring options for the first time, we’re here to support your journey toward a safer, smarter home.
+                </p>
+                <!-- <p class="footer-text">
+                   Our mission at AutomateHom is to empower you with information that truly matters. As home-security technology continues to evolve, we work to keep you up to date with the most trusted solutions, the latest innovations, and the features that offer real value. Whether you’re upgrading your current setup or exploring options for the first time, we’re here to support your journey toward a safer, smarter home. 
+                </p> -->
             </div>
 
             <!-- MIDDLE NAVIGATION COLUMN 1 -->
-            <div class="col-md-4 mt-4 mt-md-0 text-center">
+            <!-- <div class="col-md-4 mt-4 mt-md-0 text-center">
                 <h5 class="footer-heading">Navigation</h5>
 
                 <ul class="footer-links">
@@ -236,7 +248,7 @@
                     <li><a href="#">Product Liability</a></li>
                     <li><a href="#">Dangerous Drugs</a></li>
                 </ul>
-            </div>
+            </div> -->
 
             <!-- MIDDLE NAVIGATION COLUMN 2 -->
             <!-- <div class="col-md-4 mt-4 mt-md-0">
@@ -251,15 +263,18 @@
             </div> -->
 
             <!-- RIGHT NAVIGATION COLUMN 3 -->
-            <div class="col-md-4 mt-4 mt-md-0 text-center">
-                <ul class="footer-links mt-4">
-                    <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
-                    <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                    <!-- <li><a href="#">Expert Contributors</a></li>
-                    <li><a href="#">Free Case Review</a></li>
-                    <li><a href="#">Editorial Guidelines</a></li> -->
-                </ul>
-            </div>
+            <div class="col-md-12 mt-4 mt-md-0 text-center">
+
+    <!-- Light Grey Divider -->
+    <hr class="footer-divider">
+
+    <ul class="footer-links mt-4 d-flex justify-content-center gap-4">
+        <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+    </ul>
+
+</div>
+
 
         </div>
     </div>
@@ -267,9 +282,7 @@
     <!-- COPYRIGHT BAR -->
     <div class="footer-bottom">
         <div class="container text-center text-white py-3">
-            © 2025 LawFirm.com — The information provided is not a substitute for legal or 
-            professional medical advice. For more information, see our privacy policy, 
-            terms of use, and disclaimer.
+            © 2025 <a href="./">Automatehom</a> — All Rights Reserved.
         </div>
     </div>
 </footer>
